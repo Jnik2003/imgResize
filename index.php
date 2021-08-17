@@ -24,7 +24,7 @@
 
 		let arrData = [];
 		function resizeImg(){
-			// вывод секунд на страницу
+			// вывод точек на страницу
 			let interval = setInterval(fPoint, 1000);
 
 			img_width = imgwidth.value;
