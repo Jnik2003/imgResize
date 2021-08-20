@@ -1,7 +1,6 @@
 <?php 
 
 $dir_out = './out/';
-
 $dir_in = './in/';
 
 $newWidth = $_POST['imgwidth'];

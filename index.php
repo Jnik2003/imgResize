@@ -39,25 +39,21 @@
     		},
    			
    			 //body: JSON.stringify(arrData),
-   			 body: "imgwidth=" + img_width+"&"+"imgheight=" + img_height,
-   			  
+   			 body: "imgwidth=" + img_width+"&"+"imgheight=" + img_height,   			  
 
 		})
 		.then(function(response){
 			//console.log(response);
 			return response.text();
-			//return response.json();
+			
 		})
 		.then(function(response){
-			//console.log(response);		
-			
-			// это вывод ответа(избранных товаров из обработчика на страницу favorites)	
+			//console.log(response);			
 			document.querySelector('.result').innerHTML = 'Обработано '+ response + ' файлов';
 			clearInterval(interval);
 			
 		})		
 		}
-
 		
 		function fPoint(){
 			document.querySelector('.points').innerHTML += '. ';
